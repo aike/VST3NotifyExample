@@ -75,7 +75,7 @@ tresult PLUGIN_API NotifyTestProcessor::process (Vst::ProcessData& data)
 				{
 				// Note Onイベント
 				case Vst::Event::kNoteOnEvent:
-					if (event.noteOn.velocity = 0.f)
+					if (event.noteOn.velocity == 0.f)
 					{
 						// ベロシティ0のNoteOnはNoteOff扱い
 						notestat[event.noteOn.pitch].store(0);

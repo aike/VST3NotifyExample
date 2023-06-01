@@ -1,3 +1,5 @@
+// ノート番号表示用パラメータクラス
+
 #include "NoteNumberParam.h"
 #include "pluginterfaces/base/ustring.h"
 
